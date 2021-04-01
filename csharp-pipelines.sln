@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1447B7F2-4392-47EF-B9CA-50F615DB662B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-pipelines", "src\csharp-pipelines\csharp-pipelines.csproj", "{98A36625-AD5E-4BFF-8B59-E4809C02890A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-pipeliens-demo", "csharp-pipeliens-demo\csharp-pipeliens-demo.csproj", "{CD0C3D1D-29F2-49CE-AC50-5633A9D980C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98A36625-AD5E-4BFF-8B59-E4809C02890A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A36625-AD5E-4BFF-8B59-E4809C02890A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A36625-AD5E-4BFF-8B59-E4809C02890A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A36625-AD5E-4BFF-8B59-E4809C02890A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD0C3D1D-29F2-49CE-AC50-5633A9D980C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0C3D1D-29F2-49CE-AC50-5633A9D980C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0C3D1D-29F2-49CE-AC50-5633A9D980C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0C3D1D-29F2-49CE-AC50-5633A9D980C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98A36625-AD5E-4BFF-8B59-E4809C02890A} = {1447B7F2-4392-47EF-B9CA-50F615DB662B}
+		{CD0C3D1D-29F2-49CE-AC50-5633A9D980C6} = {1447B7F2-4392-47EF-B9CA-50F615DB662B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E12AA4F-D994-4199-9D53-89CAF925B578}
+	EndGlobalSection
+EndGlobal
