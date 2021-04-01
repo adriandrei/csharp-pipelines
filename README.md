@@ -12,17 +12,17 @@ public class SampleContext : Context
 }
 
 public class WaitableBlock : AsyncBlock<SampleContext>
+{
+    public override async Task Execute(SampleContext context, ILogger logger, CancellationToken? cancellationToken = null)
     {
-        public override async Task Execute(SampleContext context, ILogger logger, CancellationToken? cancellationToken = null)
-        {
-            await Task.Delay(context.WaitTime);
-        }
-
-        public override bool ShouldExecuteContext(SampleContext context, ILogger logger)
-        {
-            return true;
-        }
+        await Task.Delay(context.WaitTime);
     }
+
+    public override bool ShouldExecuteContext(SampleContext context, ILogger logger)
+    {
+        return true;
+    }
+}
 
 var context = new SampleContext()
 {
