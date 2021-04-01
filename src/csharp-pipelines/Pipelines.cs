@@ -54,13 +54,17 @@
                 }
 
                 this.logger.LogInformation($"Entering block {i + 1} out of {totalCount}: {block.GetType().Name}");
-                await block.Execute(this.context, this.logger, cancellationToken);
+
+                await block.Execute(this.context, this.logger, cancellationToken)
+                    .ConfigureAwait(false);
+
                 this.logger.LogInformation($"Exited block {i + 1} out of {totalCount}: {block.GetType().Name}");
 
                 if (i != totalCount - 1)
                 {
                     T result = new T();
-                    await executeBetweenSteps(result, this.logger);
+                    await executeBetweenSteps(result, this.logger)
+                        .ConfigureAwait(false);
                 }
 
                 if (this.context.ShouldStop)

@@ -3,6 +3,7 @@
     using Microsoft.Extensions.Logging;
     using System.Threading;
     using System.Threading.Tasks;
+
     /// <summary>
     /// The base Block class
     /// </summary>
